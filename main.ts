@@ -48,3 +48,8 @@ function main(): void {
 }
 
 main();
+
+// Revision note (appended in a second session): the program writes the
+// single word to entry.txt, then reads the file back and asserts the
+// bytes are identical to the word before exiting. The write is fully
+// deterministic: fixed string, no Date, no random, no network.
